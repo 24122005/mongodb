@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Image</title>
+</head>
+<body>
+    <center>
+        <br><br>
+        <img style="height: 500px; width: 500px;" src="<%= imagePath %>" />
+        <br><br>
+        <form action="/edit" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="oldImagePath" value="<%= imagePath %>">
+            <input type="file" name="newImage" id="">
+            <input type="submit" value="Update">
+        </form>
+    </center>
+</body>
+</html>
